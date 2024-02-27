@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap")
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap");
 
-* {
+
+body {
     font-size: large;
     font-family: 'Happy Monkey', sans-serif;
     margin: 0;
@@ -9,7 +10,9 @@
     align-items: center;
     min-height: 100vh;
     background-color: rgb(101, 101, 119);
+    flex-direction: column;
 }
+
 .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -22,8 +25,34 @@
 .category, .block {
    font-size: 20px;
    color: black;
-   background-color: rgb(133, 133, 140);
+   background-color: rgb(132, 132, 183);
    border: solid black 1px;
    padding: 10px;
    font-family: 'Happy Monkey', sans-serif;
 }
+/*make larger*/
+.answer {
+    font-size: large;
+    height: 50px;
+}
+
+.inputAnswer {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+
+}
+#score {
+    font-size: 20px;
+    color: black;
+}
+/*media looks stupid...fix it*/
+/* @media (min-width: 450px){
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} */
