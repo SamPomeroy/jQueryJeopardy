@@ -12,7 +12,11 @@ body {
     background-color: rgb(101, 101, 119);
     flex-direction: column;
 }
-
+.score {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -22,7 +26,7 @@ body {
 .category {
     font-weight: bold;
 }
-.category, .block {
+.category, .tile {
    font-size: 20px;
    color: black;
    background-color: rgb(132, 132, 183);
@@ -30,25 +34,32 @@ body {
    padding: 10px;
    font-family: 'Happy Monkey', sans-serif;
 }
-/*make larger*/
-.answer {
-    font-size: large;
-    height: 50px;
-}
 
-.inputAnswer {
-    display: flex;
+.question {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+#input {
+   
     justify-content: center;
-    padding: 25px;
-    height: 50px;
-    width: 200px;
+    padding: 5px;
+    height: 30px;
+    width: 300px;
     font-size: 20px;
     text-align: center;
 
 }
-#score {
+button {
+   
+    justify-content: center;
+    padding: 5px;
+    height: auto;
+    width: auto;
     font-size: 20px;
-    color: black;
+    background-color: rgb(250, 162, 74);
+    ;
+    text-align: center;
 }
 /*media looks stupid...fix it*/
 /* @media (min-width: 450px){
